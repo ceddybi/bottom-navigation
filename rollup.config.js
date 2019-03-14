@@ -10,6 +10,8 @@ import svgr from '@svgr/rollup'
 import pkg from './package.json'
 
 export default {
+  external: ['styled-components'],
+  globals: { 'styled-components': 'styled' },
   input: 'src/index.tsx',
   output: [
     {
