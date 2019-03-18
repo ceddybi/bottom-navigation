@@ -4,7 +4,7 @@ interface Props {
     selectedColor: string;
 }
 
-export const BottomNavWrapper: any = styled.nav`
+export const BottomNavWrapper = styled.nav<Props>`
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -39,7 +39,7 @@ export const BottomNavWrapper: any = styled.nav`
     }
     .bottom-nav__action--active{
         padding-top:6px;
-        color: ${(props: Props) => props && props.selectedColor? props.selectedColor : '#f44336'};
+        color: ${props => props && props.selectedColor? props.selectedColor : '#f44336'};
     }
     .bottom-nav__icon{
         display:block;
