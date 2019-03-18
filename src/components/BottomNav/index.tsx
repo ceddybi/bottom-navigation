@@ -18,7 +18,7 @@ export const BottomNav = () => {
     ];
 
     return (
-        <BottomNavWrapper>
+        <BottomNavWrapper selectedColor="red">
             {menusItems.map((item, i) => {
                 return (
                     <a onClick={() => setSelected(i)} className={`bottom-nav__action ${i === selected ? 'bottom-nav__action--active' : ''}`} href="#" key={item.title}>

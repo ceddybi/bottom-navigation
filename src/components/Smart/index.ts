@@ -1,14 +1,13 @@
-import React from 'react';
 import styled from 'styled-components';
 
 
 interface Props {
-    desktop: any;
-    laptop: any;
-    mobile: any;
-    mobileLand: any;
-    tablet: any;
-    tabletLand: any;
+    desktop?: any;
+    laptop?: any;
+    mobile?: any;
+    mobileLand?: any;
+    tablet?: any;
+    tabletLand?: any;
 }
 
 /**
